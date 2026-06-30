@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "api/protect.js": {
+      "includeFiles": "A_UPLOAD_GITHUB_CONTENU_LIGHT/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/protect.js?path=$1"
+    }
+  ]
+}
